@@ -8,12 +8,12 @@ import org.springframework.security.config.web.server.ServerHttpSecurity
 import org.springframework.security.web.server.SecurityWebFilterChain
 
 @Configuration
-@EnableWebFluxSecurity
 @EnableReactiveMethodSecurity
 class WebFluxSecurityConfig {
 
     @Bean
     fun securityWebFilterChain(http: ServerHttpSecurity): SecurityWebFilterChain = http
+            .csrf().disable() // Disable CSRF protection
             .authorizeExchange { spec ->
                 // TODO: Change what URIs are allowed
                 spec.pathMatchers(
