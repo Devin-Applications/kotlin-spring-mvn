@@ -1,4 +1,4 @@
-package com.devin.app.vendor
+package org.example.ktspringmvn.vendor
 
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*

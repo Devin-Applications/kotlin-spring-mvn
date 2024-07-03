@@ -1,4 +1,4 @@
-package com.devin.app.vendor
+package org.example.ktspringmvn.vendor
 
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Flux

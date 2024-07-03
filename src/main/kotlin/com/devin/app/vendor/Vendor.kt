@@ -1,4 +1,4 @@
-package com.devin.app.vendor
+package org.example.ktspringmvn.vendor
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
